@@ -1,0 +1,591 @@
+{
+	"info": {
+		"_postman_id": "c1ed90c1-2885-43ef-9a74-42d9e1832da9",
+		"name": "Ecommerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31078762"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by UUID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/1b3611dc-acad-462a-a943-060f9ccd0047",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"1b3611dc-acad-462a-a943-060f9ccd0047"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/b1a79fad-ab7a-4959-b513-8b64d6acd262",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"b1a79fad-ab7a-4959-b513-8b64d6acd262"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by UUID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Product D\",\r\n  \"description\": \"Description D\",\r\n  \"category\": \"Category 2\",\r\n  \"vendorId\": \"9d4737ae-b6e5-4677-baf5-66a4da13b070\", \r\n  \"scheduledStartDate\": \"2025-01-30\",\r\n  \"delivery\": { \"isFree\": false, \"amount\": 10 },\r\n  \"price\": { \"oldPrice\": 100, \"newPrice\": 90 }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/8ce409cf-68a6-498b-be92-459ba678bf63",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"8ce409cf-68a6-498b-be92-459ba678bf63"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Product D\",\r\n  \"description\": \"Description D\",\r\n  \"category\": \"Category 4\",\r\n  \"vendorId\": \"9d4737ae-b6e5-4677-baf5-66a4da13b070\", \r\n  \"scheduledStartDate\": \"2025-01-30\",\r\n  \"delivery\": { \"isFree\": true, \"amount\": 0 },\r\n  \"price\": { \"oldPrice\": 100, \"newPrice\": 90 }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get Roles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/roles/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"roles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by UUID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/roles/083045fa-3b6d-4952-920f-13ad609a9963",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"roles",
+								"083045fa-3b6d-4952-920f-13ad609a9963"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by UUID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/roles/083045fa-3b6d-4952-920f-13ad609a9963",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"roles",
+								"083045fa-3b6d-4952-920f-13ad609a9963"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by UUID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"staff123\",\r\n    \"permissions\":[\"read\",\"update\",\"create\", \"delete\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/roles/083045fa-3b6d-4952-920f-13ad609a9963",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"roles",
+								"083045fa-3b6d-4952-920f-13ad609a9963"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " \"firstName\": \"John\",\r\n      \"lastName\": \"Doe\",\r\n      \"email\": \"superadmin@example.com\",\r\n      \"password\": \"superadmin@123\",\r\n      \"role\": \"super-admin\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/roles/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"roles",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/26d655ec-5a84-4e8d-8123-c1247234940f",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"26d655ec-5a84-4e8d-8123-c1247234940f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/3af4ad40-ff41-4441-b389-234d5c4e95c1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"3af4ad40-ff41-4441-b389-234d5c4e95c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by UUID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"John1\",\r\n        \"lastName\": \"Doe\",\r\n        \"email\": \"admin@example5.com\",\r\n        \"role\": \"staff\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/402d21bd-ec93-44c6-b261-9d9197db25f0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"402d21bd-ec93-44c6-b261-9d9197db25f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updated password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"oldPassword\":\"superadmin@123\",\r\n     \"newPassword\": \"superadmin@1234\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/1dddcd99-75da-47ee-aa91-6caa7f95dfc9/password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"1dddcd99-75da-47ee-aa91-6caa7f95dfc9",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"firstName\": \"Bob\",\r\n      \"lastName\": \"Johnson\",\r\n      \"email\": \"staff1@example.com\",\r\n      \"password\": \"staff1@123\",\r\n      \"role\": \"staff\",\r\n      \"vendors\": [\"9d4737ae-b6e5-4677-baf5-66a4da13b070\", \"6aeffd64-97a4-4df6-8798-26fa94308472\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"buyer1@example.com\",\r\n      \"password\": \"buyer1@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"firstName\": \"John\",\r\n      \"lastName\": \"Doe\",\r\n      \"email\": \"superadmin@example91.com\",\r\n      \"password\": \"superadmin@123\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/signup",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5001/api",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "a",
+			"type": "string"
+		}
+	]
+}

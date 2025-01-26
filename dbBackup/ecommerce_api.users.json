@@ -1,0 +1,160 @@
+[{
+  "_id": {
+    "$oid": "6796694bf25ef27d7234d680"
+  },
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "superadmin@example.com",
+  "vendors": [],
+  "password": "$2a$10$SILYeJqNZzki/WETRQUydOhPgFfMGM8bf4Nmh57LCGzD0Bb0nIwGK",
+  "role": "52395540-7c90-4b05-8582-af24ef4a3b77",
+  "createdBy": "",
+  "uuid": "c0f95937-706f-48b1-805c-40d2e43dd605",
+  "createdAt": {
+    "$date": "2025-01-26T16:56:43.272Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T16:56:43.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966a1b43b7d479e5fa902f"
+  },
+  "firstName": "Alice",
+  "lastName": "Smith",
+  "email": "admin@example.com",
+  "vendors": [],
+  "password": "$2a$10$.UcOz5dQ/aF/3lFaoM1SKOQaTbElsozXLPAmFwH6FVaxxuGNSrgju",
+  "role": "726b7af0-f742-49cf-8bcf-ef33a318c2e3",
+  "createdBy": "28a1ab4f-f21a-4a9c-99c8-18ca19225114",
+  "uuid": "bfceb322-f118-4bb0-b865-283aeea6e1f4",
+  "createdAt": {
+    "$date": "2025-01-26T17:00:11.944Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:00:11.944Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966a9b43b7d479e5fa9040"
+  },
+  "firstName": "Charlie",
+  "lastName": "Davis",
+  "email": "vendor1@example.com",
+  "vendors": [],
+  "password": "$2a$10$hmMWYBaYkDTjhubVJA.ozuWTYns50icLrK5yAkk5IDCgreI.NtbmO",
+  "role": "79d056cc-417c-466d-ba11-374b079334bb",
+  "createdBy": "28a1ab4f-f21a-4a9c-99c8-18ca19225114",
+  "uuid": "9d4737ae-b6e5-4677-baf5-66a4da13b070",
+  "createdAt": {
+    "$date": "2025-01-26T17:02:19.986Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:02:19.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966ab243b7d479e5fa9048"
+  },
+  "firstName": "Grace",
+  "lastName": "Miller",
+  "email": "vendor2@example.com",
+  "vendors": [],
+  "password": "$2a$10$nyMzF3XK8v.hVnsrq7bNj.1pe14G7SANDHe4pAuJpjuXxh7.ZtlRC",
+  "role": "79d056cc-417c-466d-ba11-374b079334bb",
+  "createdBy": "28a1ab4f-f21a-4a9c-99c8-18ca19225114",
+  "uuid": "6aeffd64-97a4-4df6-8798-26fa94308472",
+  "createdAt": {
+    "$date": "2025-01-26T17:02:42.587Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:02:42.587Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966b6c43b7d479e5fa9052"
+  },
+  "firstName": "Bob",
+  "lastName": "Johnson",
+  "email": "staff1@example.com",
+  "vendors": [
+    "9d4737ae-b6e5-4677-baf5-66a4da13b070",
+    "6aeffd64-97a4-4df6-8798-26fa94308472"
+  ],
+  "password": "$2a$10$HApyHzajMId6cS0NEqbt6uv.br13W5EawS3iznjyn8ItjBbfGytYS",
+  "role": "4e813324-4268-4b5b-957d-66dcd03fb5c5",
+  "createdBy": "bfceb322-f118-4bb0-b865-283aeea6e1f4",
+  "uuid": "09674d29-db9f-4035-b5dd-49589fdd9bfb",
+  "createdAt": {
+    "$date": "2025-01-26T17:05:48.270Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:05:48.270Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966bf943b7d479e5fa9058"
+  },
+  "firstName": "Henry",
+  "lastName": "Taylor",
+  "email": "buyer1@example.com",
+  "vendors": [],
+  "password": "$2a$10$Io.xVcgEnOYfjPfCR1ZQEOnbnF2.iGQJG5Mmh0yGl.hZ27uu2bJFS",
+  "role": "17989af9-8827-4f9d-a11c-545ed5333949",
+  "uuid": "e5b1e948-456f-442a-8613-1d8a77909076",
+  "createdAt": {
+    "$date": "2025-01-26T17:08:09.874Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:08:09.874Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966c2d43b7d479e5fa9062"
+  },
+  "firstName": "Ivy",
+  "lastName": "Wilson",
+  "email": "buyer2@example.com",
+  "vendors": [],
+  "password": "$2a$10$AXgkGhvDiSR/fGZdfWHlr.z5Ainh7binU4bbUGKu/2SQFMFTjvKAa",
+  "role": "17989af9-8827-4f9d-a11c-545ed5333949",
+  "uuid": "3832063a-87c0-468f-89db-757bfd2a1520",
+  "createdAt": {
+    "$date": "2025-01-26T17:09:01.636Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:09:01.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67966c3a43b7d479e5fa9067"
+  },
+  "firstName": "Jack",
+  "lastName": "Moore",
+  "email": "buyer3@example.com",
+  "vendors": [],
+  "password": "$2a$10$7H4S4jFZSMuPwzUNngD4/OojS2xbKTwkdigG6Io3C0rwjoWbAMR/6",
+  "role": "17989af9-8827-4f9d-a11c-545ed5333949",
+  "uuid": "43a6cb24-dc8f-4762-8a65-84bca399ce99",
+  "createdAt": {
+    "$date": "2025-01-26T17:09:14.771Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T17:09:14.771Z"
+  },
+  "__v": 0
+}]

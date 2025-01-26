@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6795e23b77ad6ed620e926f9"
+  },
+  "name": "admin",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "uuid": "726b7af0-f742-49cf-8bcf-ef33a318c2e3",
+  "createdAt": {
+    "$date": "2025-01-26T07:20:27.947Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T07:20:27.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6795ecd0e85e45170752ef16"
+  },
+  "name": "super admin",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "uuid": "52395540-7c90-4b05-8582-af24ef4a3b77",
+  "createdAt": {
+    "$date": "2025-01-26T08:05:36.602Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T08:05:36.602Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6795f004a7014af7e05949dd"
+  },
+  "name": "buyer",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "uuid": "17989af9-8827-4f9d-a11c-545ed5333949",
+  "createdAt": {
+    "$date": "2025-01-26T08:19:16.926Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T08:19:16.926Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6795f01ea7014af7e05949e0"
+  },
+  "name": "staff",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "uuid": "4e813324-4268-4b5b-957d-66dcd03fb5c5",
+  "createdAt": {
+    "$date": "2025-01-26T08:19:42.914Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T08:19:42.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6795f05fa7014af7e05949e3"
+  },
+  "name": "vendors",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "uuid": "79d056cc-417c-466d-ba11-374b079334bb",
+  "createdAt": {
+    "$date": "2025-01-26T08:20:47.185Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T08:20:47.185Z"
+  },
+  "__v": 0
+}]
