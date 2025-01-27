@@ -16,13 +16,13 @@ const roleSchema = new mongoose.Schema(
     permissions: {
       type: [String],
       default: ["read"],
-      enum: ["create", "read", "update", "delete"], //enum validation for role based access permission
+      enum: ["read", "write"], //enum validation for role based access permission
       validate: [
         {
           // check if all permission are valid from the enum list
           validator: function (value) {
             return value.every((permission) =>
-              ["create", "read", "update", "delete"].includes(permission)
+              ["read", "write"].includes(permission)
             );
           },
           message: (props) => `${props.value} is not a valid permission!`,
